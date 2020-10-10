@@ -1,6 +1,6 @@
 # e-Deal
 
-## Index
+## Topics
 
 1. [作成データの標準化に向けて](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Dataanalysis-standardization-1.ipynb)
 
