@@ -30,7 +30,7 @@
 
 ## Applications
 
-* [NewHome](htps://3cc25e5f8128.ap.ngrok.io)
+* [NewHome](https://3cc25e5f8128.ap.ngrok.io)
 
 * [OpenJupyter](https://71be74b316f2.ngrok.io)
 
