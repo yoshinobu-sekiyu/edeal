@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# e-Deal
 
-You can use the [editor on GitHub](https://github.com/yoshinobu-sekiyu/e-Deal/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Index
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. [作成データの標準化に向けて](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Dataanalysis-standardization-1.ipynb)
 
-### Markdown
+2. [よりシームレスかつニッチなJupyterLabの活用](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Dataanalysis-standardization-2.ipynb)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+3. [高圧法の目的](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Nova-realismic-development-1.ipynb)
 
-```markdown
-Syntax highlighted code block
+4. [高圧ガス保安法による貯蔵、販売等の規制](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Nova-realismic-development-2.ipynb)
 
-# Header 1
-## Header 2
-### Header 3
+5. [充填容器に関する規制とプログラミング演習](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Nova-realismic-development-3.ipynb)
 
-- Bulleted
-- List
+6. [LPガス用調整器](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Nova-realismic-development-4.ipynb)
 
-1. Numbered
-2. List
+7. [供給設備の技術上の基準](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Gas-leak-detection-1.ipynb)
 
-**Bold** and _Italic_ and `Code` text
+8. [モーターホームとDIY](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Motorhome-markov-chain-1.ipynb)
 
-[Link](url) and ![Image](src)
-```
+## Methods
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Gas station nationality classification challenge
 
-### Jekyll Themes
+1. Grayscaling for morphological analysis - [Open with Colab](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Gas-station-nationality-classification-1.ipynb)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yoshinobu-sekiyu/e-Deal/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+2. Montaging datasets and strict computation tasks - [Open with Colab](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Gas-station-nationality-classification-2.ipynb)
 
-### Support or Contact
+3. Cythonized RGB-galaxy - [Open with Colab](https://colab.research.google.com/github/yoshinobu-sekiyu/e-Deal/blob/master/colab.google.com/Gas-station-nationality-classification-3.ipynb)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Applications
+
+* [NewHome](https://3cc25e5f8128.ap.ngrok.io)
+
+* [OpenJupyter](https://71be74b316f2.ngrok.io)
+
+# License
+
+MIT, see the license file.
+
+# Copyrights
+
+Copyright ©︎ , 2020 吉延石油株式会社, All rights reserved.
