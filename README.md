@@ -30,9 +30,9 @@
 
 ## Applications
 
-* [NewHome](https://3cc25e5f8128.ap.ngrok.io) , [NewHome-mirror(Accessing to chatroom)](https://0902c39b8e52.au.ngrok.io/chat)
+* [NewHome](https://3cc25e5f8128.ap.ngrok.io) , [NewHome-mirror(Accessing to chatroom)](https://c96cfc85e6be.au.ngrok.io/chat)
 
-* [OpenJupyter](https://71be74b316f2.ngrok.io) , [OpenJupyter-mirror](https://22e287304f51.jp.ngrok.io/)
+* [OpenJupyter](https://71be74b316f2.ngrok.io) , [OpenJupyter-mirror](https://38ef597af49a.jp.ngrok.io/)
 
 # License
 
