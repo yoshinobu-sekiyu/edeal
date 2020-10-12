@@ -32,7 +32,9 @@
 
 * [NewHome](https://c96cfc85e6be.au.ngrok.io)
 
-* [OpenJupyter](https://38ef597af49a.jp.ngrok.io/)
+* [Pre static arjs server](https://620fcfb86b29.ngrok.io/arjs)
+
+* [OpenJupyter](https://a3b0dfa53a33.jp.ngrok.io)
 
 # License
 
