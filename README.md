@@ -30,11 +30,7 @@
 
 ## Applications
 
-* [NewHome](https://620fcfb86b29.ngrok.io/)
-
-* [Pre static arjs server](https://620fcfb86b29.ngrok.io/arjs)
-
-* [OpenJupyter](https://a3b0dfa53a33.jp.ngrok.io)
+* Some-webapp-bound-to-ngrok
 
 # License
 
