@@ -3,31 +3,9 @@
     <meta charset="utf-8">
     <title>motorlab-aframe</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <style>
-    .arjs-loader {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 9999;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .arjs-loader div {
-      text-align: center;
-      font-size: 1.25em;
-      color: white;
-    }
-  </style>
   
   </head>
   <body> 
-    <div class="arjs-loader">
-      <div>Loading, please wait...</div>
-    </div>
   
     <a-scene>
       <a-assets>
@@ -49,19 +27,17 @@
       <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 0 0" rotation="-90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
         
       <!-- ventilator -->
-      <a-entity material="src:#ventilator" class="picture" position="2.4 4.3 -3.7" height="1.5" width="1.5">
-      </a-plane>
+      <a-entity material="src:#ventilator" class="picture" position="2.4 4.3 -3.7" height="1.5" width="1.5"></a-entity>
         
       <!-- stove -->
-      <a-entity material="src:#stove" class="picture" position="2.4 0.75 3.4" height="1.5" width="1.5">
-      </a-plane>
+      <a-entity material="src:#stove" class="picture" position="2.4 0.75 3.4" height="1.5" width="1.5"></a-entity>
         
 
       <!-- walls -->
-      <a-entity material="src:#woodboard" position="0 0 4" height="13" width="8"></a-plane>     
-      <a-entity material="src:#woodboard" rotation="0 90 0" position="4 0 0" height="13" width="8"></a-plane>
-      <a-entity material="src:#woodboard" position="0 0 -4" height="13" width="8"></a-plane>
-      <a-entity material="src:#woodboard" rotation="0 90 0" position="-4 0 0" height="13" width="8"></a-plane>
+      <a-entity material="src:#woodboard" position="0 0 4" height="13" width="8"></a-entity>     
+      <a-entity material="src:#woodboard" rotation="0 90 0" position="4 0 0" height="13" width="8"></a-entity>
+      <a-entity material="src:#woodboard" position="0 0 -4" height="13" width="8"></a-entity>
+      <a-entity material="src:#woodboard" rotation="0 90 0" position="-4 0 0" height="13" width="8"></a-entity>
       
       <!-- Controls -->
       <a-entity camera position="0 1.6 0" look-controls>
