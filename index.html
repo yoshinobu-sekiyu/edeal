@@ -33,34 +33,35 @@
       <a-assets>
         
         <img id="menu" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/menu1.JPG">
-        <img id="ceiling" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/wall.JPG">
         <img id="ceillight" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/ceillight.JPG">
         <img id="stove" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/gasstove.JPG">
+        <img id="woodboard" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/wall.JPG">
+        <img id="ventilator" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/ventilator.jpg">
       </a-assets>
       
       <!-- ceiling -->
-      <a-entity material="src:#ceiling; repeat:4; metalness:0.1;" position="0 5.5 0" rotation="90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 5.5 0" rotation="90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
         
       <!-- ceiling light -->
       <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 5.49 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
       
       <!-- ground -->
-      <a-entity material="src:#ceiling; repeat:4; metalness:0.1;" position="0 0 0" rotation="-90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 0 0" rotation="-90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
         
       <!-- ventilator -->
-      <a-plane id="ventilator" class="picture" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/ventilator.jpg" position="2.4 4.3 -3.7" height="1.5" width="1.5">
+      <a-entity material="src:#ventilator" class="picture" position="2.4 4.3 -3.7" height="1.5" width="1.5">
       </a-plane>
         
       <!-- stove -->
-      <a-plane id="stove" class="picture" src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/gasstove.JPG" position="2.4 0.75 3.4" height="1.5" width="1.5">
+      <a-entity material="src:#stove" class="picture" position="2.4 0.75 3.4" height="1.5" width="1.5">
       </a-plane>
         
 
       <!-- walls -->
-      <a-plane src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/wall.JPG" position="0 0 4" height="13" width="8"></a-plane>     
-      <a-plane src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/wall.JPG" rotation="0 90 0" position="4 0 0" height="13" width="8"></a-plane>
-      <a-plane src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/wall.JPG" position="0 0 -4" height="13" width="8"></a-plane>
-      <a-plane src="https://github.com/yoshinobu-sekiyu/e-Deal/raw/master/_static/images/wall.JPG" rotation="0 90 0" position="-4 0 0" height="13" width="8"></a-plane>
+      <a-plane material="src:#woodboard" position="0 0 4" height="13" width="8"></a-plane>     
+      <a-plane material="src:#woodboard" rotation="0 90 0" position="4 0 0" height="13" width="8"></a-plane>
+      <a-plane material="src:#woodboard" position="0 0 -4" height="13" width="8"></a-plane>
+      <a-plane material="src:#woodboard" rotation="0 90 0" position="-4 0 0" height="13" width="8"></a-plane>
       
       <!-- Controls -->
       <a-entity camera position="0 1.6 0" look-controls>
