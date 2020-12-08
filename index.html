@@ -10,10 +10,10 @@
     <a-scene>
       <a-assets>
         
-        <img id="ceillight" src="_static/images/ceillight.jpeg"/>
-        <img id="stove" src="_static/images/gasstove.jpeg"/>
-        <img id="woodboard" src="_static/images/wall.jpeg"/>
-        <img id="ventilator" src="_static/images/ventilator.jpeg"/>
+        <img id="ceillight" src="./ceillight.jpeg"/>
+        <img id="stove" src="./stove.jpeg"/>
+        <img id="woodboard" src="./wall.jpeg"/>
+        <img id="ventilator" src="./ventilator.jpeg"/>
       </a-assets>
       
       <!-- ceiling -->
@@ -33,10 +33,13 @@
         
 
       <!-- walls -->
-      <a-entity material="src:#woodboard" position="0 0 4" height="13" width="8"></a-entity>     
-      <a-entity material="src:#woodboard" rotation="0 90 0" position="4 0 0" height="13" width="8"></a-entity>
-      <a-entity material="src:#woodboard" position="0 0 -4" height="13" width="8"></a-entity>
-      <a-entity material="src:#woodboard" rotation="0 90 0" position="-4 0 0" height="13" width="8"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="0 0 8.0" rotation="0 0 0" geometry="primitive:plane;width:20;height:13"></a-entity>
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="0 0 -8.0" rotation="0 0 0" geometry="primitive:plane;width:20;height:13"></a-entity>
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="8.0 0 0" rotation="0 0 0" geometry="primitive:plane;width:20;height:13"></a-entity>     
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="-8.0 0 0" rotation="0 0 0" geometry="primitive:plane;width:20;height:13"></a-entity>     
       
       <!-- Controls -->
       <a-entity camera position="0 1.6 0" look-controls>
