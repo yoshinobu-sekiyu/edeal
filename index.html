@@ -15,10 +15,12 @@
         <img id="stove" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/stove.jpeg"/>
         <img id="woodboard" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/woodboard.jpeg"/>
         <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/ventilator.jpeg"/>
+        <img id="attendance" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/attendance.jpg">
+        <img id="advertisement" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/advertisement.jpg">
       </a-assets>
       
       <!-- ceiling -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 6 0" rotation="90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
         
       <!-- ceiling light -->
       <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 5.9 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
@@ -32,6 +34,13 @@
       <!-- stove -->
       <a-entity material="src:#stove" position="2.4 0.75 4.4" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
         
+      <!-- attendance -->
+      <a-entity material="src:#attendance" position="0 2.75 3.4" rotation="0 180 0" geometry="primitive:plane;width:3.532;height:1.984">
+      </a-entity>
+      
+      <!-- advertisement -->
+      <a-entity material="src:#advertisement" position="-3.0 2.75 -0.4" rotation="0 90 0" geometry="primitive:plane;width:2.8;height:1.5" mylink="href: https://yoshinobusekiyu.net;">
+      </a-entity>
 
       <!-- walls -->
       <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="0 3 5" rotation="0 180 0" geometry="primitive:plane;width:20;height:6"></a-entity>
