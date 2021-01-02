@@ -6,6 +6,16 @@
     <meta charset="utf-8">
     <title>motorlab-aframe</title>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script type="text/javascript">
+    
+	  AFRAME.registerComponent("mylink", {
+      init: function() {
+        this.el.addEventListener("click", (e)=> {
+          window.location = this.data.href;
+        })
+      }
+    })
+    </script>
   
   </head>
   <body> 
