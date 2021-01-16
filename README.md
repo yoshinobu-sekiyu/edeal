@@ -6,6 +6,9 @@
 
 2. [よりシームレスかつニッチなJupyterLabの活用](https://colab.research.google.com/github/yoshinobu-sekiyu/edeal/blob/master/colab.google.com/Dataanalysis-standardization-2.ipynb)
 
+3. ["SSL暗号化の壁".replace("の","は")](https://colab.research.google.com/github/yoshinobu-sekiyu/edeal/blob/master/colab.google.com/Motorhome-markov-chain-3.ipynb)
+
+
 ## Methods
 
 ### 1. Gas station nationality classification challenge
