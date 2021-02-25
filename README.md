@@ -27,4 +27,4 @@
 
 ## Copyright
 
-Copyright ©︎ 2020, Yoshinobusekiyu K.K. , All rights reserved.
+Copyright ©︎ 2020-2021, Yoshinobusekiyu K.K. , All rights reserved.
