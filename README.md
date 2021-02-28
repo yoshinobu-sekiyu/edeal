@@ -17,7 +17,7 @@
 
 2. [Montaging-datasets](https://colab.research.google.com/github/yoshinobu-sekiyu/edeal/blob/master/colab.google.com/Gas-station-nationality-classification-2.ipynb)
 
-3. [RGB-galaxy(Discussion needed, please comment on github!)](https://colab.research.google.com/github/yoshinobu-sekiyu/edeal/blob/master/colab.google.com/Gas-station-nationality-classification-3.ipynb)
+3. [RGB-galaxy](https://colab.research.google.com/github/yoshinobu-sekiyu/edeal/blob/master/colab.google.com/Gas-station-nationality-classification-3.ipynb)
 
 ## Applications
 
