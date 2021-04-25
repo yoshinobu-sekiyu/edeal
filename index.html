@@ -1,0 +1,98 @@
+<html>
+  <head>
+    
+    <!-- Copyright ©︎ Yoshinobusekiyu K.K. All rights reserved. -->
+
+    <meta charset="utf-8">
+    <title>motorlab-aframe</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://raw.githubusercontent.com/n5ro/aframe-extras/master/dist/aframe-extras.min.js"></script>
+    <script type="text/javascript">
+    
+	  AFRAME.registerComponent("mylink", {
+      init: function() {
+        this.el.addEventListener("click", (e)=> {
+          window.location = this.data.href;
+        })
+      }
+    })
+    </script>
+  
+  </head>
+  <body> 
+  
+    <a-scene>
+      <a-assets>
+        
+        <img id="ceillight" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/ceillight.jpeg"/>
+        <img id="stove" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/stove.jpeg"/>
+        <img id="woodboard" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/woodboard.jpeg"/>
+        <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/ventilator.jpeg"/>
+        <img id="attendance" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/attendance.jpeg">
+        <img id="toWorkers" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/toWorkers.jpeg">
+        <img id="workersMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/workersMenu.jpeg">
+        <img id="toClients" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/toClients.jpeg">
+        <img id="clientsMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/clientsMenu.jpeg">
+        <img id="advertisement" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/advertisement.jpeg">
+        <img id="sky" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/sky.jpeg">
+      </a-assets>
+      
+      <!-- ceiling -->
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
+        
+      <!-- ceiling light -->
+      <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 7.9 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
+      
+      <a-light position="0 3.9 0" type="ambient" intensity="0.4" color="white"></a-light>
+      
+      <!-- ground -->
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 0.5 0" rotation="-90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
+        
+      <!-- ventilator -->
+      <a-entity material="src:#ventilator" position="2.4 4.3 -4.7" rotation="0 0 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+      
+      <!-- environment -->
+      <a-entity environment="skyType: gradient; skyTexture: #sky; horizonColor: lightblue; groundTexture: walkernoise"></a-entity>
+          
+      <!-- stove -->
+      <a-entity material="src:#stove" position="2.4 0.75 4.4" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+        
+      <!-- toWorkers -->
+      <a-entity material="src:#toWorkers" position="0 6.05 3.4" rotation="30 180 0" geometry="primitive:plane;width:4.62;height:1.136">
+      </a-entity>
+      
+      <!-- workersMenu -->
+      <a-entity material="src:#workersMenu" position="0 3.05 3.4" rotation="0 180 0" geometry="primitive:plane;width:5.62;height:3.136" mylink="href: https://www.yoshinobusekiyu.net/contents/category/contact/;">
+      </a-entity>
+      
+      <!-- toClients -->
+      <a-entity material="src:#toClients" position="3.4 6.05 0" rotation="30 -90 0" geometry="primitive:plane;width:4.62;height:1.136">
+      </a-entity>
+      
+      <!-- clientsMenu -->
+      <a-entity material="src:#clientsMenu" position="3.4 3.05 0" rotation="0 -90 0" geometry="primitive:plane;width:5.62;height:3.136" mylink="href: https://www.yoshinobusekiyu.net/contents/category/contact/;">
+      </a-entity>
+      
+      <!-- advertisement -->
+      <a-entity material="src:#advertisement" position="-4.9 2.75 0" rotation="0 90 0" geometry="primitive:plane;width:4.2;height:0.9" mylink="href: https://yoshinobusekiyu.net;">
+      </a-entity>
+
+      <!-- walls -->
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 3 5" rotation="0 180 0" geometry="primitive:plane;width:10;height:6"></a-entity>
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 3 -5" rotation="0 0 0" geometry="primitive:plane;width:10;height:6"></a-entity>
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="5 3 0" rotation="0 -90 0" geometry="primitive:plane;width:10;height:6"></a-entity>     
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="-5 3 0" rotation="0 90 0" geometry="primitive:plane;width:10;height:6"></a-entity>     
+      
+      <!-- camera -->
+      <a-entity camera position="0 9 0" look-controls wasd-controls>
+        <a-cursor></a-cursor>
+      </a-entity>
+
+    </a-scene>
+      
+  </body>
+</html>
