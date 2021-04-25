@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <title>motorlab-aframe</title>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://raw.githubusercontent.com/n5ro/aframe-extras/master/dist/aframe-extras.min.js"></script>
     <script type="text/javascript">
     
 	  AFRAME.registerComponent("mylink", {
@@ -20,7 +22,7 @@
   </head>
   <body> 
   
-    <a-scene vr-mode-ui="enabled: true">
+    <a-scene>
       <a-assets>
         
         <img id="ceillight" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/ceillight.jpeg"/>
@@ -33,21 +35,26 @@
         <img id="toClients" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/toClients.jpeg">
         <img id="clientsMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/clientsMenu.jpeg">
         <img id="advertisement" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/e-Deal/gh-pages/advertisement.jpeg">
+        <img id="sky" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/sky.jpeg">
       </a-assets>
       
       <!-- ceiling -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
         
       <!-- ceiling light -->
       <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 7.9 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
       
+      <a-light position="0 3.9 0" type="ambient" intensity="0.4" color="white"></a-light>
+      
       <!-- ground -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1;" position="0 0 0" rotation="-90 0 0" geometry="primitive:plane;width:20;height:20"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 0.5 0" rotation="-90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
         
       <!-- ventilator -->
       <a-entity material="src:#ventilator" position="2.4 4.3 -4.7" rotation="0 0 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
       
-        
+      <!-- environment -->
+      <a-entity environment="skyType: gradient; skyTexture: #sky; horizonColor: lightblue; groundTexture: walkernoise"></a-entity>
+          
       <!-- stove -->
       <a-entity material="src:#stove" position="2.4 0.75 4.4" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
         
@@ -72,16 +79,16 @@
       </a-entity>
 
       <!-- walls -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="0 3 5" rotation="0 180 0" geometry="primitive:plane;width:20;height:6"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 3 5" rotation="0 180 0" geometry="primitive:plane;width:10;height:6"></a-entity>
       
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="0 3 -5" rotation="0 0 0" geometry="primitive:plane;width:20;height:6"></a-entity>
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 3 -5" rotation="0 0 0" geometry="primitive:plane;width:10;height:6"></a-entity>
       
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="5 3 0" rotation="0 -90 0" geometry="primitive:plane;width:20;height:6"></a-entity>     
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="5 3 0" rotation="0 -90 0" geometry="primitive:plane;width:10;height:6"></a-entity>     
       
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1" position="-5 3 0" rotation="0 90 0" geometry="primitive:plane;width:20;height:6"></a-entity>     
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="-5 3 0" rotation="0 90 0" geometry="primitive:plane;width:10;height:6"></a-entity>     
       
       <!-- camera -->
-      <a-entity camera position="0 2 0" look-controls wasd-controls>
+      <a-entity camera position="0 9 0" look-controls wasd-controls>
         <a-cursor></a-cursor>
       </a-entity>
 
