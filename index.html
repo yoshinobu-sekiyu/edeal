@@ -36,12 +36,13 @@
         <img id="clientsMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/clientsMenu.jpeg">
         <img id="advertisement" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/advertisement.jpeg">
         <img id="sky" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/sky.jpeg">
+        <img id="ground" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ground.jpeg">
       </a-assets>
       
       <!-- ceiling -->
       <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
       
-      <!-- ceiling light -->
+      <!-- ceilingLight -->
       <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 7.9 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
       
       <a-light position="0 3.9 0" type="ambient" intensity="0.5" color="white"></a-light>
@@ -54,7 +55,11 @@
       
       <!-- environment -->
       <a-entity environment="skyType: gradient; skyTexture: #sky; horizonColor: lightblue; groundTexture: walkernoise"></a-entity>
-          
+       
+      <!-- ground when environment not works -->
+      <a-entity material="src:#ground; repeat:500; metalness:0;" position="0 -0.2 0" rotation="-90 0 0" geometry="primitive:plane;width:1000;height:1000">
+      </a-entity>
+      
       <!-- stove -->
       <a-entity material="src:#stove" position="2.9 1.15 4.6" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
         
