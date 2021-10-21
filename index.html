@@ -26,7 +26,7 @@
       <a-assets>
         
         <img id="ceillight" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ceillight.jpeg"/>
-        <img id="stove" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/stove.jpeg"/>
+        <img id="heater" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater.jpeg"/>
         <img id="woodboard" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/woodboard.jpeg"/>
         <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ventilator.jpeg"/>
         <img id="attendance" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/attendance.jpeg">
@@ -37,6 +37,8 @@
         <img id="advertisement" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/advertisement.jpeg">
         <img id="sky" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/sky.jpeg">
         <img id="ground" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ground.jpeg">
+        <img id="heater_top" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_top.jpeg">
+        <img id="heater_side" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_side.jpeg">
       </a-assets>
       
       <!-- ceiling -->
@@ -60,8 +62,12 @@
       <a-entity material="src:#ground; repeat:500; metalness:0;" position="0 -0.2 0" rotation="-90 0 0" geometry="primitive:plane;width:1000;height:1000">
       </a-entity>
       
-      <!-- stove -->
-      <a-entity material="src:#stove" position="2.9 1.15 4.6" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+      <!-- heater -->
+      <a-entity material="src:#heater" position="2.9 1.15 4.6" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+      
+      <a-entity material="src:#heater_top" position="2.9 1.90 4.8" rotation="-90 180 0" geometry="primitive:plane;width:1.5;height:0.4"></a-entity>
+      
+      <a-entity material="src:#heater_side" position="2.15 1.15 4.8" rotation="0 -90 0" geometry="primitive:plane;width:0.4;height:1.5"></a-entity>
         
       <!-- toWorkers -->
       <a-entity material="src:#toWorkers" position="0 6.05 4.1" rotation="30 180 0" geometry="primitive:plane;width:4.62;height:1.136">
