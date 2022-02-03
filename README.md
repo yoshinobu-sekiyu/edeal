@@ -20,4 +20,4 @@
 
 ## Copyright
 
-Copyright ©︎ 2020-2021, Yoshinobusekiyu K.K. , All rights reserved.
+Copyright ©︎ Yoshinobusekiyu K.K. , All rights reserved.
