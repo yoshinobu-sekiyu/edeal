@@ -21,15 +21,15 @@
     </script>
     <script type="text/javascript">
     AFRAME.registerComponent('rotateit', {
-  		tick: function () {
-    		var el = this.el;
-    		var rotationTmp = this.rotationTmp = this.rotationTmp || {x: 0, y: 0, z: 0};
-    		var rotation = el.getAttribute('rotation');
-    		rotationTmp.z = rotation.z + 1.7;
-    		el.setAttribute('rotation', rotationTmp);
-  			}
-			});
-		</script>
+      tick: function () {
+    	var el = this.el;
+    	var rotationTmp = this.rotationTmp = this.rotationTmp || {x: 0, y: 0, z: 0};
+    	var rotation = el.getAttribute('rotation');
+    	rotationTmp.z = rotation.z + 1.7;
+    	el.setAttribute('rotation', rotationTmp);
+  	}
+    });
+    </script>
   
   </head>
   <body> 
