@@ -19,6 +19,17 @@
       }
     })
     </script>
+    <script type="text/javascript">
+    AFRAME.registerComponent('rotateit', {
+  		tick: function () {
+    		var el = this.el;
+    		var rotationTmp = this.rotationTmp = this.rotationTmp || {x: 0, y: 0, z: 0};
+    		var rotation = el.getAttribute('rotation');
+    		rotationTmp.z = rotation.z + 1.7;
+    		el.setAttribute('rotation', rotationTmp);
+  			}
+			});
+		</script>
   
   </head>
   <body> 
@@ -29,7 +40,7 @@
         <img id="ceillight" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ceillight.jpeg"/>
         <img id="heater_front" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_front.jpeg"/>
         <img id="woodboard" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/woodboard.jpeg"/>
-        <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ventilator.jpeg"/>
+        <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ventilator.png"/>
         <img id="attendance" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/attendance.jpeg"/>
         <img id="toWorkers" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/toWorkers.jpeg"/>
         <img id="workersMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/workersMenu.jpeg"/>
@@ -42,6 +53,7 @@
         <img id="heater_side" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_side.jpeg"/>
         <img id="netshop" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/netshop.jpeg"/>
         <img id="waranya" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/waranya.jpeg"/>
+        
       </a-assets>
       
       <!-- ceiling -->
@@ -56,7 +68,7 @@
       <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 0.4 0" rotation="-90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
         
       <!-- ventilator -->
-      <a-entity material="src:#ventilator" position="2.4 6.5 -4.9" rotation="0 0 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+      <a-entity material="src:#ventilator" position="2.4 6.5 -4.9" rotation="0 0 0" geometry="primitive:plane;width:1.5;height:1.5" rotateit></a-entity>
       
       <!-- environment -->
       <a-entity environment="skyType: gradient; skyTexture: #sky; horizonColor: lightblue; groundTexture: walkernoise"></a-entity>
