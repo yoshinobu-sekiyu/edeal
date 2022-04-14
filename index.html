@@ -23,10 +23,10 @@
     AFRAME.registerComponent('rotateit', {
       tick: function () {
     	var el = this.el;
-    	var rotationTmp = this.rotationTmp = this.rotationTmp || {x: 0, y: 0, z: 0};
+    	var rotationUpdate = this.rotationUpdate = this.rotationUpdate || {x: 0, y: 0, z: 0};
     	var rotation = el.getAttribute('rotation');
-    	rotationTmp.z = rotation.z + 1.7;
-    	el.setAttribute('rotation', rotationTmp);
+    	rotationUpdate.z = rotation.z + 1.7;
+    	el.setAttribute('rotation', rotationUpdate);
   	}
     });
     </script>
