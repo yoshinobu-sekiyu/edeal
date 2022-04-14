@@ -1,0 +1,122 @@
+<html>
+  <head>
+    
+     <!-- Copyright ©︎ Yoshinobusekiyu K.K. , All rights reserved. -->
+
+     <meta charset="utf-8">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <title>motorlab-aframe</title>
+     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-sprite-particles-component@^0.5.0/aframe-sprite-particles-component.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script type="text/javascript">
+    AFRAME.registerComponent("clicklink", {
+      init: function() {
+        this.el.addEventListener("click", (e)=> {
+          window.location = this.data.href;
+        })
+      }
+    })
+    </script>
+  
+  </head>
+  <body> 
+  
+    <a-scene>
+      <a-assets>
+        
+        <img id="ceillight" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ceillight.jpeg"/>
+        <img id="heater_front" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_front.jpeg"/>
+        <img id="woodboard" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/woodboard.jpeg"/>
+        <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ventilator.jpeg"/>
+        <img id="toWorkers" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/toWorkers.jpeg">
+        <img id="workersMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/workersMenu.jpeg">
+        <img id="toClients" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/toClients.jpeg">
+        <img id="clientsMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/clientsMenu.jpeg">
+        <img id="advertising" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/advertising.jpeg">
+        <img id="sky" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/sky.jpeg">
+        <img id="ground" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ground.jpeg">
+        <img id="heater_top" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_top.jpeg">
+        <img id="heater_side" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_side.jpeg">
+        <img id="netshop" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/netshop.jpeg">
+        
+      </a-assets>
+      
+      <!-- ceiling -->
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
+      
+      <!-- ceilingLight -->
+      <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 7.9 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
+      
+      <a-light position="0 3.9 0" type="ambient" intensity="0.5" color="white"></a-light>
+      
+      <!-- floor -->
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 0.4 0" rotation="-90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
+        
+      <!-- ventilator -->
+      <a-entity material="src:#ventilator" position="2.4 6.5 -4.9" rotation="0 0 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+      
+      <!-- environment -->
+      <a-entity environment="skyType: gradient; skyTexture: #sky; horizonColor: lightblue; ground:none"></a-entity>
+       
+      <!-- ground when environment not works -->
+      <a-entity material="src:#ground; repeat:500; metalness:0;" position="0 -0.2 0" rotation="-90 0 0" geometry="primitive:plane;width:1000;height:1000">
+      </a-entity>
+      
+      <!-- heater -->
+      <a-entity material="src:#heater_front" position="2.9 1.15 4.6" rotation="0 180 0" geometry="primitive:plane;width:1.5;height:1.5"></a-entity>
+      
+      <a-entity material="src:#heater_top" position="2.9 1.90 4.8" rotation="-90 180 0" geometry="primitive:plane;width:1.5;height:0.4"></a-entity>
+      
+      <a-entity material="src:#heater_side" position="2.15 1.15 4.8" rotation="0 -90 0" geometry="primitive:plane;width:0.4;height:1.5"></a-entity>
+      
+      <a-entity material="src:#heater_side" position="3.65 1.15 4.8" rotation="0 90 0" geometry="primitive:plane;width:0.4;height:1.5"></a-entity>
+        
+      <!-- toWorkers -->
+      <a-entity material="src:#toWorkers" position="0 6.05 4.1" rotation="30 180 0" geometry="primitive:plane;width:4.62;height:1.136">
+      </a-entity>
+      
+      <!-- workersMenu -->
+      <a-entity material="src:#workersMenu" position="0 3.05 4.9" rotation="0 180 0" geometry="primitive:plane;width:5.92;height:3.536" clicklink="href: https://www.yoshinobusekiyu.net/contents/category/contact/;">
+      </a-entity>
+      
+      <!-- toClients -->
+      <a-entity material="src:#toClients" position="4.1 6.05 0" rotation="30 -90 0" geometry="primitive:plane;width:4.62;height:1.136">
+      </a-entity>
+      
+      <!-- clientsMenu -->
+      <a-entity material="src:#clientsMenu" position="4.9 3.05 0" rotation="0 -90 0" geometry="primitive:plane;width:5.92;height:3.536" clicklink="href: https://www.yoshinobusekiyu.net/contents/category/contact/;">
+      </a-entity>
+      
+      <!-- advertising -->
+      <a-entity material="src:#advertising" position="-4.9 2.75 0" rotation="0 90 0" geometry="primitive:plane;width:4.2;height:0.9" clicklink="href: https://yoshinobusekiyu.net;">
+      </a-entity>
+      
+      <!-- netshop -->
+      <a-entity material="src:#netshop" position="0 2.75 -4.9" rotation="0 0 0" geometry="primitive:plane;width:4.2;height:0.9" clicklink="href: https://planet-station.jp;">
+      </a-entity>
+      <!-- walls -->
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 4.2 5" rotation="0 180 0" geometry="primitive:plane;width:10;height:8"></a-entity>
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 4.2 -5" rotation="0 0 0" geometry="primitive:plane;width:10;height:8"></a-entity>
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="5 4.2 0" rotation="0 -90 0" geometry="primitive:plane;width:10;height:8"></a-entity>     
+      
+      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="-5 4.2 0" rotation="0 90 0" geometry="primitive:plane;width:10;height:8"></a-entity>
+      
+      
+      <!-- campFire -->
+      <a-cylinder position="0 0.4 -9" color="brown" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
+      <a-cylinder position="0 0.4 -9" color="brown" radius="0.15" height="1.5" rotation="90 90 0"></a-cylinder>
+      <a-entity position="0 0.7 -9" sprite-particles__smoke="texture: https://raw.githubusercontent.com/harlyq/aframe-sprite-particles-component/master/assets/fog.png; velocity: -.1 1 -.3.. .3 1 .3; spawnRate: 2; lifeTime: 2; scale: 4,8; opacity: 0,1,0; color: white; rotation: -120..120" sprite-particles__fire="texture: https://raw.githubusercontent.com/harlyq/aframe-sprite-particles-component/master/assets/explosion_sheet.png; textureFrame: 5 5; velocity: .2 .1 -.2.. .6 .1 .2; acceleration: 0 1 0..0 3 0; spawnRate: 15; scale: 2..4,6..8; opacity: 1,0; angularVelocity: 0 60 0; blending: additive" sprite-particles__sparks="color: yellow, red; spawnRate: 10; lifeTime: 0.3..0.7; velocity: 0 2.5..0 4.5; angularVelocity: -50 0 -50..50 0 50; scale: .1...4"></a-entity>
+      
+      <!-- camera -->
+      
+      <a-entity camera position="0 2.1 0" look-controls wasd-controls>
+        <a-cursor></a-cursor>
+      </a-entity>
+    </a-scene>
+      
+  </body>
+</html>
