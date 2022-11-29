@@ -14,7 +14,7 @@
     AFRAME.registerComponent("clicklink", {
       init: function() {
         this.el.addEventListener("click", (e)=> {
-          window.location = this.href;
+          window.location = this.data.location;
         })
       }
     })
