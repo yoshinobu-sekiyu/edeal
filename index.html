@@ -39,7 +39,7 @@
         
         <img id="ceillight" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ceillight.jpeg"/>
         <img id="heater_front" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/heater_front.jpeg"/>
-        <img id="woodboard" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/woodboard.jpeg"/>
+        <img id="woodpanel" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/woodpanel.jpeg"/>
         <img id="ventilator" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/ventilator.png"/>
         <img id="toWorkers" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/toWorkers.jpeg"/>
         <img id="workersMenu" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/workersMenu.jpeg"/>
@@ -59,7 +59,7 @@
       </a-assets>
       
       <!-- ceiling -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
+      <a-entity material="src:#woodpanel; repeat:4; metalness:0.1; shader:standard" position="0 8 0" rotation="90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
       
       <!-- ceilingLight -->
       <a-entity material="src:#ceillight; repeat:1; metalness:0.1;" position="0 7.9 0" rotation="90 0 0" geometry="primitive:plane;width:1.8;height:5.5"></a-entity>
@@ -67,7 +67,7 @@
       <a-light position="0 3.9 0" type="ambient" intensity="0.5" color="white"></a-light>
       
       <!-- floor -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 0.4 0" rotation="-90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
+      <a-entity material="src:#woodpanel; repeat:4; metalness:0.1; shader:standard" position="0 0.4 0" rotation="-90 0 0" geometry="primitive:plane;width:10;height:10"></a-entity>
         
       <!-- ventilator -->
       <a-entity material="color:white" geometry="primitive:plane; width:2.25; height:2.25" position="2.4 6.5 -4.95"></a-entity>
@@ -110,13 +110,13 @@
       </a-entity>
 
       <!-- walls -->
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 4.2 5" rotation="0 180 0" geometry="primitive:plane;width:10;height:8"></a-entity>
+      <a-entity material="src:#woodpanel; repeat:8; metalness:0.1; shader:standard" position="0 4.2 5" rotation="0 180 0" geometry="primitive:plane;width:10;height:8"></a-entity>
       
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="0 4.2 -5" rotation="0 0 0" geometry="primitive:plane;width:10;height:8"></a-entity>
+      <a-entity material="src:#woodpanel; repeat:8; metalness:0.1; shader:standard" position="0 4.2 -5" rotation="0 0 0" geometry="primitive:plane;width:10;height:8"></a-entity>
       
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="5 4.2 0" rotation="0 -90 0" geometry="primitive:plane;width:10;height:8"></a-entity>     
+      <a-entity material="src:#woodpanel; repeat:8; metalness:0.1; shader:standard" position="5 4.2 0" rotation="0 -90 0" geometry="primitive:plane;width:10;height:8"></a-entity>     
       
-      <a-entity material="src:#woodboard; repeat:4; metalness:0.1; shader:standard" position="-5 4.2 0" rotation="0 90 0" geometry="primitive:plane;width:10;height:8"></a-entity>
+      <a-entity material="src:#woodpanel; repeat:8; metalness:0.1; shader:standard" position="-5 4.2 0" rotation="0 90 0" geometry="primitive:plane;width:10;height:8"></a-entity>
             
       <!-- campFire -->
       <a-cylinder position="-0.5 0.15 -9" color="brown" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
