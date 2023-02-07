@@ -55,6 +55,7 @@
         <img id="oystershell" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/shell.jpg"/>
         <img id="manhole" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/manhole.jpeg"/>
         <img id="woodceil" src="https://raw.githubusercontent.com/yoshinobu-sekiyu/edeal/gh-pages/woodceil.jpeg"/>
+        <img id="oysterBanner" src="https://img21.shop-pro.jp/PA01478/307/css_eyecatch/eyecatch_banner_img_1.png?cmsp_timestamp=20230130163920"/>
         
         
       </a-assets>
@@ -120,17 +121,24 @@
       <a-entity material="src:#woodpanel; repeat:4; metalness:0.1; shader:standard" position="-5 4.2 0" rotation="0 90 0" geometry="primitive:plane;width:10;height:8"></a-entity>
             
       <!-- campFire -->
-      <a-cylinder position="-0.5 0.15 -9" color="brown" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
-      <a-cylinder position="0.5 0.15 -9" color="brown" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
-      <a-cylinder position="0 0.45 -9.5" color="brown" radius="0.15" height="1.5" rotation="90 90 0"></a-cylinder>
-      <a-cylinder position="0 0.45 -8.5" color="brown" radius="0.15" height="1.5" rotation="90 90 0"></a-cylinder>
-      <a-cylinder position="-0.5 0.75 -9" color="brown" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
-      <a-cylinder position="0.5 0.75 -9" color="brown" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
+      <a-cylinder position="-0.5 0.15 -9" color="#8b4513" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
+      <a-cylinder position="0.5 0.15 -9" color="#8b4513" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
+      <a-cylinder position="0 0.45 -9.5" color="#8b4513" radius="0.15" height="1.5" rotation="90 90 0"></a-cylinder>
+      <a-cylinder position="0 0.45 -8.5" color="#8b4513" radius="0.15" height="1.5" rotation="90 90 0"></a-cylinder>
+      <a-cylinder position="-0.5 0.75 -9" color="#8b4513" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
+      <a-cylinder position="0.5 0.75 -9" color="#8b4513" radius="0.15" height="1.5" rotation="90 0 0"></a-cylinder>
       
       <!-- oysterBeBack -->
       <a-curvedimage src="#oyster" position="0 0.15 -7.5" height="0.75" radius="0.3" theta-length="180" rotation="0 0 90" scale="0.75 1.5 0.75" clicklink="href: https://planet-station.jp/?mode=cate&csid=0&cbid=2840615#ppc;"></a-curvedimage>
       <a-circle src="#oystershell" radius="0.225" rotation="0 90 0" position="0.5625 0.15 -7.5"></a-circle>
       <a-circle src="#oystershell" radius="0.225" rotation="0 -90 0" position="-0.5625 0.15 -7.5"></a-circle>
+      
+      <!-- signboard -->
+      <a-cylinder position="-3 2 -17" color="#fffafa" height="4" radius="0.2"></a-cylinder>
+      <a-cylinder position="-6 2 -13" color="#fffafa" height="4" radius="0.2"></a-cylinder>
+      <a-box position="-4.5 6 -15" color="#fffafa" height="4" depth="0.4" width="7" rotation="0 57.2968 0"></a-box>
+      <a-image src="#oysterBanner" position="-4.5 6 -14.6" height="4" width="7"></a-image>
+      
       
       <!-- Manhole -->
       <a-plane src="#manhole" position="-8.5 0.1 0" rotation="-90 0 0" width="1.5" height="1.5" transparent="true"></a-plane>
