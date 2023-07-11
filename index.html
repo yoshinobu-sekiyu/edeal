@@ -6,10 +6,14 @@
     <meta charset="utf-8"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <title>motorlab-aframe</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
-    <script src="https://unpkg.com/aframe-sprite-particles-component@^0.5.0/aframe-sprite-particles-component.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <link rel="preload" href="https://aframe.io/releases/1.2.0/aframe.min.js" as="script">
+    <link rel="preload" href="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js" as="script">
+    <link rel="preload" href="https://unpkg.com/aframe-sprite-particles-component@^0.5.0/aframe-sprite-particles-component.js" as="script">
+    <link rel="preload" href="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js" as="script">
+    <script defer src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script defer src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+    <script defer src="https://unpkg.com/aframe-sprite-particles-component@^0.5.0/aframe-sprite-particles-component.js"></script>
+    <script defer src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
     <script type="text/javascript">
     AFRAME.registerComponent("clicklink", {
       init: function() {
